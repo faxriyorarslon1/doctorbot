@@ -1,0 +1,262 @@
+{"intents": [
+        {"tag": "salomlashish",
+         "patterns": ["Salom", "Ahvollaringiz qanday?", "Kimdir bormi?", "Assalomu Aleykum", "Hayrli Kun", "Nima gap?"],
+         "responses": ["Salom!", "Assalomu aleykum, men sizga qanday yordam bera olaman?"],
+         "context_set": [""]
+        },
+        
+        {"tag": "ism",
+         "patterns": ["ismingiz nima", "sizni nima deb chaqirsam bo'ladi", "isming nima ?"],
+         "responses": ["Siz meni doctorBot deb chaqirishingiz mumkin.", "Men doctorBotman!", "Men insonlarga tor tibbiy soxada maslaxatlar beruvchi botman."],
+         "context_set": [""]
+        },
+        
+        {"tag": "muammoni_hal_qilish",
+        "patterns": ["menga yordam kerak","yordam ber","menga ayt","menda biroz muommo bor","muommo","menga yordam bera olasanmi ?"],
+        "responses": ["ha men sizga yordam bera olaman","men sizga qanday yordam berishim mumkin ?","Men nima qilishimni istaysiz","mendan qanday yordam xoxlaysiz ?","Mendan qaysi soxada yordam kutyapsiz","menga ayting"],
+        "context_set": [""]
+        },
+        {
+        	"tag":"sariqlik(jaundice)",
+        	"patterns":["sariq teri","ko'zning oq qismi sariq rangda","teri qichishi","ochiq rangli najas","quyuq rangli siydik"],
+        	"responses":["siz sariq (hasta)likdan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"hissiy muammolar",
+        	"patterns":["tashvish", "depressiya charchoqlari", "taranglik hissi", "yangi va dahshatli tushlar", "muntazam faoliyatga qiziqishsizlik", "o'z joniga qasd qilish fikrlari", "gallyutsinatsiyalar", "aldanishlar"],
+        	"responses":["Siz hissiy muammolardan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"bosh og'rig'i muammolari",
+        	"patterns":["bosh aylanishi", "ko'ngil aynishi", "qusish", "yura olmaslik", "madorsizlik"],
+        	"responses":["siz bosh og'rig'i bilan bog'liq muammolarga duch kelgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"appenditsit",
+        	"patterns":["kasallik (ko'ngil aynishi)", "kasal bo'lish", "ishtaha yo'qolishi", "diareya", "yuqori harorat (isitma) va yuzning qizarishi"],
+        	"responses":["Siz appenditsit bilan og'rigan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"anal saraton",
+        	"patterns":["pastdan qon ketish (rektal qon ketish)", "anus atrofida qichishish va og'riq", "anus atrofidagi mayda bo'laklar", "anusdan shilliq oqishi", "ichak nazoratini yo'qotish"],
+        	"responses":["Siz anal saratonidan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"allergiya",
+        	"patterns":["aksirmoq va burunning qichishi, oqishi yoki tiqilib qolishi", "ko'zlarning qichishi, qizarishi, yoshlanishi", "xirillash, ko'krak qafasidagi siqilish, nafas qisilishi va yo'tal", "ko'tarilgan, qichiydigan, qizil toshmalar (ürtiker)", "shishgan lablar, til, ko'zlar yoki yuz","qorin og'rig'i, o'zini yomon his qilish, qusish yoki diareya","quruq, qizarib ketgan va yorilgan teri"],
+        	"responses":["Siz allergiya bilan og'rigan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"alkogol bilan bog'liq jigar kasalligi",
+        	"patterns":["qorin og'rig'i", "ishtahaning yo'qolishi", "charchoq", "kasallik", "diareya", "umuman o'zini yomon his qilish", "teri va ko'z oqlarining sarg'ayishi (sariqlik)", "oyoqlarda shishish" , "to'piq va oyoqlarda suyuqlik to'planishi sababli","qorin bo'shlig'ida shishish, astsit deb nomlanuvchi suyuqlik to'planishi","yuqori harorat (isitma) va titroq xurujlari","juda qichiydigan teri ","soch to'kilishi","barmoq uchlari va tirnoqlari g'ayrioddiy kavisli (to'plangan barmoqlar)","qizil kaftlar","sezilarli vazn yo'qotish","zaiflik va mushaklarning kamayishi","chalkashlik va xotira muammolari, uyqusizlik (uyqusizlik) va miyada toksinlar to'planishi tufayli shaxsiyatingizdagi o'zgarishlar", "qon qusish va ichki qon ketishi tufayli qora, qatronli axlat", "qon ketish va tez-tez qon ketish kabi tez-tez ko'karish tendentsiyasi", "alkogol va giyohvand moddalarga sezgirlikning oshishi"],
+        	"responses":["siz spirtli ichimliklar bilan bog'liq jigar kasalligidan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	
+	{
+        	"tag":"siydik pufagi saratoni",
+        	"patterns":["tez-tez siyish zarurati", "to'satdan siydik chiqarishga chaqirish", "siydik chiqarishda yonish hissi"],
+        	"responses":["Siz siydik pufagi saratonidan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"suvsizlanish",
+        	"patterns":["ko'ngil aynish", "engil bosh aylanishi", "bosh og'rig'i", "charchoq", "og'izning qurishi", "quruq lablar", "ko'zlarning qurishi", "kamdan-kam hollarda siydik chiqarish"],
+        	"responses":["Siz suvsizlanishdan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"diabetik retinopatiya",
+        	"patterns":["ko'rishning asta-sekin yomonlashishi", "to'satdan ko'rishning yo'qolishi", "ko'rish sohasida suzuvchi shakllar (suzuvchilar)", "loyqa ko'rish", "ko'rishning yamoqlari", "ko'zning og'rig'i yoki qizarishi"],
+        	"responses":["Siz diabetik retinopatiya bilan og'rigan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"2-toifa diabet",
+        	"patterns":["odatdagidan tez-tez yuvinish, ayniqsa kechasi", "juda chanqoqlik", "juda charchash", "aniq bo'lmagan vazn yo'qotish", "jinsiy a'zolar atrofida qichishish", "sekin bitadigan kesiklar yoki yaralar", "loyqa ko'rish" ],
+        	"responses":["Siz 2-toifa diabet bilan og'rigan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"1-toifa diabet",
+        	"patterns":["juda chanqoqlik hissi", "odatdagidan tez-tez siyish", "ayniqsa tunda siyish", "juda charchash", "vazn yo'qotish", "mushaklar hajmini yo'qotish", "jinsiy a'zolar atrofida qichishish", "muntazam siyish","qichitqi", "loyqa ko'rish", "ko'zning shaklini o'zgartiradigan linzalar"],
+        	"responses":["Siz 1-toifa diabet bilan og'rigan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"Gipoglikemiya",
+        	"patterns":["qizg'ish va asabiylashish", "terlash", "lablar karıncalanması", "zaiflik", "chalkashlik hissi", "ochlik", "ko'ngil aynishi", "kasallik"],
+        	"responses":["Siz gipoglikemiya (past qon glyukoza) bilan og'rigan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"Giperglikemiya",
+        	"patterns":["qattiq tashnalik", "og'izning qurishi", "loyqa ko'rish", "uyquchanlik", "tez-tez siydik chiqarish zarurati"],
+        	"responses":["Siz giperglikemiya (yuqori qon glyukoza) bilan og'rigan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"diareya",
+        	"patterns":["oshqozon kramplari", "ko'ngil aynishi", "qusish", "bosh og'rig'i", "ishtaha yo'qolishi"],
+        	"responses":["Siz diareya bilan og'rigan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"Ebola",
+        	"patterns":["yuqori haroratli isitma", "bosh og'rig'i", "bo'g'imlar va mushaklardagi og'riqlar", "tomoq og'rig'i", "mushaklarning og'ir zaifligi"],
+        	"responses":["Siz Eboladan bosh og'rig'idan azob chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	
+	
+	{
+        	"tag":"buyrak saratoni",
+        	"patterns":["haddan tashqari charchoq (charchoq) yoki kamqonlik", "bexosdan vazn yo'qotish", "haroratning 38C (100,4F) yoki undan yuqori ko'tarilishi", "tungi terlashlar", "umumiy o'zini yomon his qilish", "moyak qon tomirlarining shishishi(erkakalarda)", "ishtaha yo'qolishi", "qon bosimining ko'tarilishi (gipertoniya)"],
+        	"responses":["Siz buyrak saratonidan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	
+	{
+        	"tag":"bezli isitma",
+        	"patterns":["yuqori harorat isitma", "tomoq og'rig'i", "shishgan bezlar", "charchoq", "haddan tashqari charchoq"],
+        	"responses":["siz bezli isitma(grandular fever)dan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"gul changiga allergiya",
+        	"patterns":["tez-tez aksirish", "burun oqishi", "burunning tiqilib qolishi", "ko'zlarning qichishi, qizarishi yoki oqishi", "tomoq, og'iz, burun va quloqlarning qichishi" , "yo'tal"],
+        	"responses":["Siz bahor isitmasidan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"fibromiyaljiya",
+        	"patterns":["keng tarqalgan og'riq"],
+        	"responses":["Siz fibromiyalgiya bilan og'rigan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"ko'z saratoni",
+        	"patterns":["soyalar, yorug'lik chaqnashlari yoki ko'rishda xira chiziqlar", "loyqa ko'rish", "ko'zda qorong'u dog'lar", "ko'rishning qisman yoki to'liq yo'qolishi", "bir ko'zning bo'rtib ketishi", "ko'z qovog'idagi yoki kattalashib borayotgan ko'z", "ko'z ichidagi yoki atrofidagi og'riq"],
+        	"responses":["Siz ko'z saratonidan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	
+	{
+        	"tag":"COVID-19",
+        	"patterns":["bir soat davom etgan yangi yo'tal", "24 soat ichida 3 yoki undan ortiq yo'tal epizodlari bo'lgan", "odatdagidan ko'proq yo'talayotgan", "yangi doimiy yo'tal"," isitma/yuqori harorat (37,8C) yoki kattaroq)"],
+        	"responses":["siz COVID-19 dan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"shamollash",
+        	"patterns":["tomoq og'rig'i", "burun bitishi yoki oqishi", "aksirish", "yo'tal", "xiritilgan ovoz", "umuman o'zini yomon his qilish"],
+        	"responses":["siz shamollashdan aziyat chakayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"chechak",
+        	"patterns":["kasal his qilish", "yuqori harorat (isitma) 38C (100,4F) yoki undan yuqori", "mushaklar og'rig'i, og'riqli", "bosh og'rig'i", "umuman o'zini yomon his qilish", "ishtaha yo'qolishi"],
+        	"responses":["Siz suvchechak bilan kasallangan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"insult",
+        	"patterns":[" yuzning cho'kishi", "qo'llarning zaifligi", "nutqda qiyinchilik", "tez rivojlanayotgan bosh aylanishi yoki muvozanat", "to'satdan uyqusizlik yoki zaiflik", "ko'rishning yo'qolishi", "chalkashlik", "qattiq bosh og'rig'i"],
+        	"responses":["Siz insultdan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"ko'krak muammolari",
+        	"patterns":[" ko'krak bezi oqishi", "ko'krak qafasining g'ayrioddiy og'rig'i yoki og'rig'i", "ko'krak yoki ko'krak terisi o'zgarishi", "ko'krak yoki qo'ltiq ostidagi bo'lak yoki qalinlashuv"],
+        	"responses":["Siz ko'krak bilan bog'liq muammolardan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"Reproduktiv salomatlik muammolari",
+        	"patterns":["hayz hayz ko'rish oralig'ida qon ketish yoki dog'lar", "jinsiy a'zolarning qichishi, yonishi yoki tirnash xususiyati", "jinsiy aloqada og'riq yoki noqulaylik", "hayzdan og'ir yoki og'riqli qon ketish"," tosda/qorin bo'shlig'ida kuchli og'riqlar", "odatiy bo'lmagan qin oqishi", " qorinning pastki qismida to'liqlik hissi", "tez-tez siyish yoki siydik chiqarishning tezlashishi"],
+        	"responses":["Siz reproduktiv salomatlik bilan bog'liq muammolarga duch kelishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	
+	{
+        	"tag":"o'pka muammolari",
+        	"patterns":["qon bilan yo'talish", "nafas qisilishi", "nafas olishda qiyinchilik", "surunkali yo'tal", "bronxit yoki pnevmoniyaning takroriy hujumlari", "xirillash"],
+        	"responses":["Siz o'pka bilan bog'liq muammolardan aziyat chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+	{
+        	"tag":"quviq muammolari",
+        	"patterns":["qiyin yoki og'riqli siyish", "tez-tez siyish", "quviqni nazorat qilishni yo'qotish", "siydikda qon", "kechasi tez-tez siyish uchun uyg'onish", "kechasi yotoqni namlash", "siydik oqishi"],
+        	"responses":["Sizda quviq bilan aloqadaor hastaliklar bo'lishi mumkin"],
+        	"context_set":[""]
+
+        },
+
+	{
+        	"tag":"ovqatlanish yoki vazn bilan bog'liq muammolar",
+        	"patterns":["haddan tashqari tashnalik", "suvsizlanish", "haddan tashqari ochlik", "harakat qilmasdan vazn yo'qotish", "ichish, qusish", "ochlik", "oziq-ovqat va vazn bilan mashg'ullik", "buzilgan tana qiyofasi", "majburiy mashqlar", "laksatiflar yoki parhez tabletkalarini suiiste'mol qilish", "depressiya"],
+        	"responses":["Siz ovqatlanish yoki vazn bilan bog'liq muammolardan azob chekayotgan bo'lishingiz mumkin"],
+        	"context_set":[""]
+
+        },
+        {
+        	"tag":"gripp",
+        	"patterns":["bosh og'rig'i", "bosh og'rig'i", "yo'tal", "isitma", "hidrish", "burun oqishi", "tomoq og'rig'i", "tomoq og'rig'i", "tomoq qichishi"],
+        	"responses":["siz gripp bilan hastalangan bo'lishingiz mumkin", "siz gripp bilan og'rigan bo'lishingiz mumkin"],
+        	"context_set":[""]
+        },
+        {
+            "tag":"astma",
+            "patterns":["nafas qisilishi", "ko'krak og'rig'i yoki siqilish", "yo'tal", "hirillash"],
+            "responses":["Siz astma bilan og'rigan bo'lishingiz mumkin"],
+            "context_set":[""]
+        },
+        {
+            "tag":"gepatit B",
+            "patterns":["qorin og'rig'i", "isitma", "siydikning qorayishi", "bo'g'imlardagi og'riq", "ishtahaning yo'qolishi", "ko'ngil aynishi va qusish", "zaiflik va charchoq", "terining sarg'ayishi", "sariqlik"],
+            "responses":["Siz gepatit B bilan kasallangan bo'lishingiz mumkin"],
+            "context_set":[""]
+        },
+        {
+            "tag":"Denga kasalligi",
+            "patterns":["bosh og'rig'i", "isitma", "mushak og'rig'i", "bo'g'imlardagi og'riq", "ko'z orqasidagi og'riq", "ko'ngil aynishi va qusish", "toshmalar", "tish go'shti yoki burundan kichik qon ketish"],
+            "responses":["Siz Dengue bilan kasallangan bo'lishingiz mumkin"],
+            "context_set":[""]
+        }
+		
+   ]
+}
